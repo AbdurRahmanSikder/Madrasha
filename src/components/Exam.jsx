@@ -33,7 +33,7 @@ const Exam = ({ text }) => {
             <div className="flex justify-between items-center">
                 <h2 className="text-xl font-bold text-black">{text}</h2>
                 <div className="text-black">
-                    {isOpen ? '^' : <img src={down_img} />}
+                    <img src={down_img} />
                 </div>
             </div>
             <div className='h-[2px] bg-[#AFAFAF] my-4'></div>

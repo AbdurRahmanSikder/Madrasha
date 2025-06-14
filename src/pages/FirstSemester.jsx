@@ -9,7 +9,7 @@ const FirstSemester = () => {
     const percentage = Math.round((current / total) * 100);
 
     return (
-        <div className='bg-[#F2F2F2] w-full px-36 py-10'>
+        <div className='bg-[#F2F2F2] min-h-screen w-full px-36 py-10'>
             <div className='bg-white px-16 py-8 mb-8 flex items-center justify-between'>
                 <div>
                     <p className='text-[20px] text-[#4A4A4A]'>Total exam fee collected</p>
