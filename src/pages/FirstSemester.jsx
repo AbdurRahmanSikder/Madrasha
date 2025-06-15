@@ -7,6 +7,26 @@ const FirstSemester = () => {
     const current = 608764;
     const total = 898567;
     const percentage = Math.round((current / total) * 100);
+    const schedule = {
+        subjects: [
+            { name: 'Banglia', date: '22/Apr/2025 - Saturday', fullMarks: 100, passMarks: 33 },
+            { name: 'English', date: 'dd/mm/yyyy - Day', fullMarks: 100, passMarks: 33 },
+            { name: 'Mathematics', date: 'dd/mm/yyyy - Day', fullMarks: 100, passMarks: 33 },
+            { name: 'Arabic', date: 'dd/mm/yyyy - Day', fullMarks: 100, passMarks: 33 },
+        ],
+        students: [
+            { roll: 1, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
+            { roll: 2, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
+            { roll: 3, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
+            { roll: 4, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
+            { roll: 5, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
+            { roll: 6, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
+            { roll: 7, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
+            { roll: 8, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
+            { roll: 9, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
+            { roll: 10, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
+        ],
+    };
 
     return (
         <div className='bg-[#F2F2F2] min-h-screen w-full px-36 py-10'>
@@ -45,9 +65,9 @@ const FirstSemester = () => {
                 ))}
             </div>
             <div className='mt-8'>
-                <Exam text="Class 1"/>
-                <Exam text="Class 2"/>
-                <Exam text="Class 3"/>
+                <Exam whichClass="Class 1" schedule={schedule} />
+                <Exam whichClass="Class 2" schedule={schedule}/>
+                <Exam whichClass="Class 3" schedule={schedule}/>
             </div>
         </div>
     )

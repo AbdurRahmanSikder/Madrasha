@@ -3,35 +3,14 @@ import download_img from "./../assets/download.png"
 import upload_img from "./../assets/upload.png"
 import edit_img from "./../assets/edit.png"
 import down_img from "./../assets/down.png"
-const Exam = ({ text }) => {
+const Exam = ({ whichClass,schedule }) => {
     const [isOpen, setIsOpen] = useState(false);
-
-    const schedule = {
-        subjects: [
-            { name: 'Banglia', date: '22/Apr/2025 - Saturday', fullMarks: 100, passMarks: 33 },
-            { name: 'English', date: 'dd/mm/yyyy - Day', fullMarks: 100, passMarks: 33 },
-            { name: 'Mathematics', date: 'dd/mm/yyyy - Day', fullMarks: 100, passMarks: 33 },
-            { name: 'Arabic', date: 'dd/mm/yyyy - Day', fullMarks: 100, passMarks: 33 },
-        ],
-        students: [
-            { roll: 1, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
-            { roll: 2, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
-            { roll: 3, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
-            { roll: 4, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
-            { roll: 5, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
-            { roll: 6, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
-            { roll: 7, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
-            { roll: 8, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
-            { roll: 9, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
-            { roll: 10, name: 'Wade Warren', marks: { quran: 0, islam: 0, english: 0, bangla: 0, math: 0, gk: 0 } },
-        ],
-    };
 
     return (
 
         <div onClick={() => setIsOpen(!isOpen)} className="w-full py-4">
             <div className="flex justify-between items-center">
-                <h2 className="text-[18px] font-bold text-[#131313]">{text}</h2>
+                <h2 className="text-[18px] font-bold text-[#131313]">{whichClass}</h2>
                 <div className="text-[#131313]">
                     <img src={down_img} />
                 </div>
