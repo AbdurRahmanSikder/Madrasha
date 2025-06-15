@@ -36,7 +36,7 @@ const Exam = ({ text }) => {
                     <img src={down_img} />
                 </div>
             </div>
-            <div className='h-[2px] bg-[#AFAFAF] my-4'></div>
+            <div className='h-[2px] bg-[#AFAFAF] mt-1 mb-4'></div>
             {isOpen && (
                 <>
                     <div className='flex justify-between my-2'>
@@ -49,7 +49,7 @@ const Exam = ({ text }) => {
                     <table className="w-full border-collapse border border-[#AFAFAF]">
                         <thead>
                             <tr className="bg-[#F2F2F2]">
-                                <th className="py-2 text-left text-black pl-2">Subjects</th>
+                                <th className="py-2 text-left text-black pl-8">Subjects</th>
                                 <th className="py-2 text-left text-black  ">Exam date</th>
                                 <th className="py-2 text-left text-black  ">Full marks</th>
                                 <th className="py-2 text-left text-black  ">Pass marks</th>
@@ -58,7 +58,7 @@ const Exam = ({ text }) => {
                         <tbody>
                             {schedule.subjects.map((subject, index) => (
                                 <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-[#F2F2F2]'}>
-                                    <td className="py-2 text-left text-black pl-2">{subject.name}</td>
+                                    <td className="py-2 text-left text-black pl-8">{subject.name}</td>
                                     <td className="py-2 text-left text-black">{subject.date}</td>
                                     <td className="py-2 text-left text-black">{subject.fullMarks}</td>
                                     <td className="py-2 text-left text-black">{subject.passMarks}</td>
@@ -76,7 +76,7 @@ const Exam = ({ text }) => {
                     <table className="w-full border-collapse mt-2 border border-[#AFAFAF]">
                         <thead>
                             <tr className="bg-[#F2F2F2]">
-                                <th className="py-2 text-left text-black  pl-4">Roll</th>
+                                <th className="py-2 text-left text-black  pl-8">Roll</th>
                                 <th className="py-2 text-left text-black  ">Student name</th>
                                 <th className="py-2 text-left text-black  ">Quran majid</th>
                                 <th className="py-2 text-left text-black  ">Islam</th>
@@ -91,7 +91,7 @@ const Exam = ({ text }) => {
                         <tbody>
                             {schedule.students.map((student, index) => (
                                 <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-[#F2F2F2]'}>
-                                    <td className="py-2 text-left text-black pl-4">{student.roll}</td>
+                                    <td className="py-2 text-left text-black pl-8">{student.roll}</td>
                                     <td className="py-2 text-left text-black ">{student.name}</td>
                                     <td className="py-2 text-left text-black">{student.marks.quran}</td>
                                     <td className="py-2 text-left text-black">{student.marks.islam}</td>
